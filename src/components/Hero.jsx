@@ -10,7 +10,24 @@ const Hero = () => {
             </div>
         <div className="flex mt-5">
             <button className="shadow-xl shadow-black text-white bg-[#1526bd] hover:bg-[#b45609] md:text-xs p-2 rounded-full">Create NFT</button>
+
         </div>
+
+        <div className="w-3/4 flex justify-between items-center mt-5">
+            <div className="text-white ">
+            <p className="font-bold">50K</p>
+            <small className="text-gray-300">Users</small>
+            </div>
+            <div className="text-white ">
+            <p className="font-bold">75K</p>
+            <small className="text-gray-300">Arts</small>
+            </div>
+            <div className="text-white ">
+            <p className="font-bold">33K</p>
+            <small className="text-gray-300">Artist</small>
+            </div>
+        </div>
+        
         </div>
     </div>
   )
