@@ -14,14 +14,14 @@ body {
 }
 
 .gradient-bg-hero {
-  background-color: #151c25;
+  background-color: #111111;
   background-image: radial-gradient(
       at 0% 0%,
-      hsl(316, 78%, 11%) 0,
+      hsl(279, 54%, 5%) 0,
       transparent 50%
     ),
-    radial-gradient(at 50% 0%, hsl(244, 62%, 35%) 0, transparent 50%),
-    radial-gradient(at 100% 0%, rgb(43, 107, 70) 0, transparent 50%);
+    radial-gradient(at 50% 0%, hsl(240, 60%, 30%) 0, transparent 50%),
+    radial-gradient(at 100% 0%, rgb(48, 37, 109) 0, transparent 50%);
 }
 
 .gradient-bg-artworks {
