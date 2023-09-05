@@ -1,6 +1,7 @@
 import Header from "./components/Header"
 import Hero from "./components/Hero"
 import Artworks from "./components/Artworks"
+import Transactions from "./components/Transactions"
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       <Hero />
       </div>
       <Artworks />
+      <Transactions />
     </div>
   )
 }
