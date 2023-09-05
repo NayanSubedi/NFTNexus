@@ -15,7 +15,7 @@ const Header = () => {
             <li className='mx-4 cursor-pointer'>Features</li>
         </ul>
 
-        <button className='shadow-s shadow-blue text-white bg-[#5C469C] hover:bg-[#122b28] md:text-xs p-2 rounded-full'>
+        <button className='shadow-xl shadow-black text-white bg-[#1526bd] hover:bg-[#b45609] md:text-xs p-2 rounded-full'>
             Connect Wallet
         </button>
     </div>
