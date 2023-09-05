@@ -9,9 +9,12 @@ const Artworks = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-4 lg:gap-3 py-2.5">
           {Array(4)
             .fill()
-            .map((_, i) => (
+            .map((nft, i) => (
               <Card key={i} nft={i + 1} />
             ))}
+        </div>
+        <div className="text-center my-5">
+        <button className='shadow-lg shadow-black text-sm bg-[#1526bd] hover:bg-[#b45609] rounded-full px-1.5 py-1'>View More</button>
         </div>
       </div>
     </div>
