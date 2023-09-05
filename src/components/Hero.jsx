@@ -1,5 +1,5 @@
 import Identicon from 'react-identicons'
-const imgHero = 'https://img.freepik.com/free-vector/hand-drawn-nft-style-ape-illustration_23-2149622021.jpg?w=740&t=st=1693900093~exp=1693900693~hmac=fd332086f131b492a0c3b927a96fdbe276fc51a057cdce7ea15561693da1a313'
+const imgHero = 'https://img.freepik.com/free-photo/man-neon-suit-sits-chair-with-neon-sign-that-says-word-it_188544-27011.jpg?w=1380&t=st=1693909372~exp=1693909972~hmac=3bc0688d7a8c6545a2e54fed4467eaa371735924c61f644c3cd6c54ca7be1ba3'
 const Hero = () => {
   return (
     <div className="flex flex-col md:flex-row w-4/5 justify-between items-center mx-auto py-10">
