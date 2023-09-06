@@ -4,6 +4,7 @@ import Artworks from "./components/Artworks"
 import Transactions from "./components/Transactions"
 import Footer from "./components/Footer"
 import CreateNFT from "./components/CreateNFT"
+import ShowNFT from "./components/ShowNFT"
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <Transactions />
       <Footer />
       <CreateNFT />
+      <ShowNFT />
     </div>
   )
 }
