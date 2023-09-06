@@ -10,9 +10,9 @@ const Header = () => {
         
         <ul className='md:flex-[0.35] text-white md:flex hidden list-none justify-between items-center flex-initial'>
             <li className='mx-4 cursor-pointer'>Market</li>
-            <li className='mx-4 cursor-pointer'>Art</li>
-            <li className='mx-4 cursor-pointer'>Creators</li>
+            <li className='mx-4 cursor-pointer'>Artist</li>
             <li className='mx-4 cursor-pointer'>Features</li>
+            <li className='mx-4 cursor-pointer'>Community</li>
         </ul>
 
         <button className='shadow-xl shadow-black text-white bg-[#1526bd] hover:bg-[#b45609] md:text-xs p-2 rounded-full'>
