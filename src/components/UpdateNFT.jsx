@@ -2,7 +2,7 @@ import { useState } from 'react'
 import {FaTimes} from 'react-icons/fa'
 import { setGlobalState, useGlobalState } from '../store'
 const imgHero = 'https://img.freepik.com/free-photo/man-neon-suit-sits-chair-with-neon-sign-that-says-word-it_188544-27011.jpg?w=1380&t=st=1693909372~exp=1693909972~hmac=3bc0688d7a8c6545a2e54fed4467eaa371735924c61f644c3cd6c54ca7be1ba3'
-const CreateNFT = () => {
+const UpdateNFT = () => {
     const [modal] = useGlobalState('modal')
     const [title, setTitle] = useState('')
     const [price, setPrice] = useState('')
@@ -14,7 +14,7 @@ const CreateNFT = () => {
     const handleSubmit =  (e) => {
         e.preventDefault()
 
-        if(!title || !description || !price) return
+        if(!price) return
 
 
         console.log('Minted...')
@@ -30,11 +30,7 @@ const CreateNFT = () => {
     }
 
     const resetForm = () => {
-        setFileUrl('')
-        setImgBase64(null)
-        setTitle('')
         setPrice('')
-        setDescription('')
     }
 
     
@@ -128,4 +124,4 @@ const CreateNFT = () => {
   )
 }
 
-export default CreateNFT
+export default UpdateNFT
