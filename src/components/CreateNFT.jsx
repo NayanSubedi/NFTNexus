@@ -1,22 +1,57 @@
 import { useState } from 'react'
 import {FaTimes} from 'react-icons/fa'
+import { setGlobalState, useGlobalState } from '../store'
 const imgHero = 'https://img.freepik.com/free-photo/man-neon-suit-sits-chair-with-neon-sign-that-says-word-it_188544-27011.jpg?w=1380&t=st=1693909372~exp=1693909972~hmac=3bc0688d7a8c6545a2e54fed4467eaa371735924c61f644c3cd6c54ca7be1ba3'
 const CreateNFT = () => {
-    const {title, setTitle} = useState('')
-    const {description, setDescription} = useState('')
-    const {price, setPrice} = useState('')
-    const {fileUrl, setFileUrl} = useState('')
-    const {imgBase64, setImgBase64} = useState(null)
+    const [modal] = useGlobalState('modal')
+    const [title, setTitle] = useState('')
+    const [price, setPrice] = useState('')
+    const [description, setDescription] = useState('')
+    const [fileUrl, setFileUrl] = useState('')
+    const [imgBase64, setImgBase64] = useState(null)
+
+
+    const handleSubmit =  (e) => {
+        e.preventDefault()
+
+        if(!title || !description || !price) return
+
+
+        console.log('Minted...')
+
+        closeModal()
+
+    }
+
+    const closeModal = () => {
+        setGlobalState('modal', 'scale-0')
+        resetForm()
+
+    }
+
+    const resetForm = () => {
+        setFileUrl('')
+        setImgBase64(null)
+        setTitle('')
+        setPrice('')
+        setDescription('')
+    }
+
+    
     
   return (
-    <div className="fixed top-0 left-0 w-screen h-screen flex items-center justify-center bg-black bg-opacity-50
-    transform transition-transform duration-300 scale-100">
+    <div className={`fixed top-0 left-0 w-screen h-screen flex items-center justify-center bg-black bg-opacity-50
+    transform transition-transform duration-300 ${modal}`}>
+
         <div className="bg-[#151c25] shadow-xl shadow-[#1526bd]
         rounded-xl w-11/12 md:w-2/5 h-7/12 p-6">
-            <form className="flex flex-col">
+            <form onSubmit={handleSubmit} className="flex flex-col">
                 <div className="flex justify-between items-center text-gray-400">
                     <p className="font-semibold  ">Add NFT</p>
-                    <button type = "button" className="border-0 bg-transparent focus:outline-none" >
+                    <button type = "button" 
+                    onClick={closeModal}
+                    
+                    className="border-0 bg-transparent focus:outline-none" >
                         <FaTimes />
 
                     </button>
@@ -24,7 +59,7 @@ const CreateNFT = () => {
                 </div>
                 <div className='flex justify-center items-center rounded-xl mt-5'>
                     <div className='shrink-0 rounded-xl overflow-hidden h-20 w-20'>
-                        <img className='h-full w-full object-cover cursor-pointer' src= {imgHero} alt="NFT" />
+                        <img className='h-full w-full object-cover cursor-pointer' src= {imgBase64 || imgHero} alt="NFT" />
                     </div>
                 </div>
                 <div className='flex justify-between items-center bg-gray-800 rounded-xl mt-5 '>
@@ -32,7 +67,8 @@ const CreateNFT = () => {
                         <span className='sr-only'>Choose Profile Photo</span>
                         <input type='file' accept='image/png, image/jpg, image/jpeg, image/gif, image/webp' className=' block w-full text-sm text-slate-500 file:mr-4
                         file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold
-                        hover:file:bg-[#1d2631] focus:outline-none cursor-pointer focus:ring-0' required/>
+                        hover:file:bg-[#1d2631] focus:outline-none cursor-pointer focus:ring-0' 
+                        required/>
                     </label>
                 </div>
                 <div className="flex flex-row justify-between items-center bg-gray-800 rounded-xl mt-5">
@@ -43,6 +79,8 @@ const CreateNFT = () => {
               type="text"
               name="title"
               placeholder="Title"
+              onChange={(e) => setTitle(e.target.value)}
+              value={title}
               required
             />
           </div>
@@ -56,6 +94,8 @@ const CreateNFT = () => {
               placeholder="Price (ETH)"
               min = {0.01}
               step={0.01}
+              onChange={(e) => setPrice(e.target.value)}
+              value={price}
               required
             />
           </div>
@@ -67,6 +107,8 @@ const CreateNFT = () => {
               type="text"
               name="description"
               placeholder="Description"
+              onChange={(e) => setDescription(e.target.value)}
+              value={description}
               required
             ></textarea>
           </div>
