@@ -35,7 +35,7 @@ const Hero = () => {
             <div className='flex justify-start items-center p-3'>
                 <Identicon className='h-10 w-10 object-contain rounded-full mr-3 ' string={'0x35...102n'} size={50}/>
                 <div>
-                    <p className='text-white font-semibold'>0x35...102n</p>
+                    <p className='text-white font-semibold'>0x35...086a</p>
                     <small className='text-red-700 font-semibold text-md'>@ppap</small>
                 </div>
             </div>
