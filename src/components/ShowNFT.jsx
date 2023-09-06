@@ -1,3 +1,4 @@
+import Identicon from 'react-identicons'
 import { useState } from 'react'
 import {FaTimes} from 'react-icons/fa'
 import { setGlobalState, useGlobalState } from '../store'
@@ -37,32 +38,56 @@ const ShowNFT = () => {
 
                 </div>
                 <div className='flex justify-center items-center rounded-xl mt-5'>
-                    <div className='shrink-0 rounded-xl overflow-hidden h-20 w-20'>
+                    <div className='shrink-0 rounded-xl overflow-hidden h-40 w-40'>
                         <img className='h-full w-full object-cover cursor-pointer' src= {imgHero} alt="NFT" />
                     </div>
                 </div>
-               
-          <div className="flex flex-row justify-between items-center bg-gray-800 rounded-xl mt-5">
-            <textarea
-              className="block w-full text-sm resize-none
-                text-slate-500 bg-transparent border-0
-                focus:outline-none focus:ring-0 h-20"
-              type="text"
-              name="description"
-              placeholder="Description"
-              onChange={(e) => setDescription(e.target.value)}
-              value={description}
-              required
-            ></textarea>
-          </div>
 
+                <div className='flex flex-col justify-start rounded-xl mt-5'> 
+                <h4 className='text-white font-semibold'>Title</h4>
+                <p className='text-gray-400 text-xs my-1'>
+
+                  Raesent ante magna, pulvinar eget ultrices sed, accumsan vel felis. Vivamus eleifend enim ut lectus rutrum aliquet. 
+                   Nullam dignissim porttitor est, sed condimentum nisi tincidunt vitae.
+                </p>
+                <div className='flex justify-between items-center mt-3 text-white'>
+                  <div className='flex justify-start items-center'>
+                    <Identicon className="h-10 w-10 object-contain rounded-full mr-3" string={'ncshusgcsuycjynnn'} size={50}/>
+                  
+                  <div className='flex flex-col justify-center  items-start'>
+                  <small className='text-white font-bold'>@Owner</small>
+                  <small className='text-red-500 font-semibold'>0x25...036d</small>
+                  </div>
+                  </div>
+                  <div className='flex flex-col text-white '>
+                    <small className='text-xs'>Current Price</small>
+                    <p className='text-sm font-semibold'>0.34 ETH</p>
+                  </div>
+                </div>
+                </div>
+                
+
+          <div className='flex justify-between  items-center space-x-2'>
           <button className="flex flex-row justify-center items-center
               w-full text-white text-md bg-[#1526bd]
               hover:bg-[#b45609] py-2 px-5 rounded-full
               drop-shadow-xl border border-transparent
               hover:bg-transparent hover:text-[#b45609]
               hover:border hover:border-[#b45609]
-              focus:outline-none focus:ring mt-5">Mint Now</button>
+              focus:outline-none focus:ring mt-5 ">Purchase
+              </button>
+
+              {/* <button className="flex flex-row justify-center items-center
+              w-full text-white text-md bg-[#1526bd]
+              hover:bg-[#b45609] py-2 px-5 rounded-full
+              drop-shadow-xl border border-transparent
+              hover:bg-transparent hover:text-[#b45609]
+              hover:border hover:border-[#b45609]
+              focus:outline-none focus:ring mt-5">Change Price</button> */}
+
+          </div>
+
+
           
 
             </div>
