@@ -1,4 +1,5 @@
 import Identicon from 'react-identicons'
+import { setGlobalState } from '../store'
 const imgHero = 'https://img.freepik.com/free-photo/man-neon-suit-sits-chair-with-neon-sign-that-says-word-it_188544-27011.jpg?w=1380&t=st=1693909372~exp=1693909972~hmac=3bc0688d7a8c6545a2e54fed4467eaa371735924c61f644c3cd6c54ca7be1ba3'
 const Hero = () => {
   return (
@@ -10,7 +11,7 @@ const Hero = () => {
                 <p className="text-gray-400 font-semibold text-lg ">From Pixels to Possession.</p>
             </div>
         <div className="flex mt-5">
-            <button className="shadow-xl shadow-black text-white bg-[#1526bd] hover:bg-[#b45609] md:text-xs p-2 rounded-full">Create NFT</button>
+            <button className="shadow-xl shadow-black text-white bg-[#1526bd] hover:bg-[#b45609] md:text-xs p-2 rounded-full" onClick={() => setGlobalState('modal', 'scale-100')}>Create NFT</button>
 
         </div>
 
