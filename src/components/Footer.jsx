@@ -1,34 +1,80 @@
-import NFTNexuslogo from '../assets/NFTNexus.png'
+import React from 'react';
+import { Link, animateScroll as scroll } from 'react-scroll'; 
 
-const Footer = () => (
-    <div className="w-full flex md:justify-center justify-between items-center flex-col p-4 gradient-bg-footer">
-      <div className="w-full flex sm:flex-row flex-col justify-between items-center my-4">
-        <div className="flex flex-[0.25] justify-center items-center">
-          <img src={NFTNexuslogo} alt="logo" className="w-32" />
+import NFTNexusLogo from '../assets/NFTNexus.png';
+
+const Footer = () => {
+  const scrollToTop = () => {
+    scroll.scrollToTop(); 
+  };
+
+  return (
+    <footer className="gradient-bg-footer text-white">
+      <div className="container mx-auto py-8 flex flex-col items-center">
+        <div className="flex justify-center items-center mb-4">
+          <img src={NFTNexusLogo} alt="NFT Nexus Logo" className="w-32" />
         </div>
-  
-        <div className="flex flex-1 justify-evenly items-center flex-wrap sm:mt-0 mt-5 w-full">
-          <p className="text-white text-base text-center mx-2 cursor-pointer">
-            Market
-          </p>
-          <p className="text-white text-base text-center mx-2 cursor-pointer">
-            Artist
-          </p>
-          <p className="text-white text-base text-center mx-2 cursor-pointer">
-            Features
-          </p>
-          <p className="text-white text-base text-center mx-2 cursor-pointer">
-            Community
-          </p>
+
+        <div className="flex flex-wrap justify-center">
+          <Link
+            to="home"
+            smooth={true}
+            duration={500} // Duration of the scroll animation in milliseconds
+            className="text-white text-base mx-3 hover:text-blue-500 cursor-pointer"
+          >
+            Home
+          </Link>
+          <Link
+            to="creators"
+            smooth={true}
+            duration={500}
+            className="text-white text-base mx-3 hover:text-blue-500 cursor-pointer"
+          >
+            Artworks
+          </Link>
+          <Link
+            to="features"
+            smooth={true}
+            duration={500}
+            className="text-white text-base mx-3 hover:text-blue-500 cursor-pointer"
+          >
+            Creators
+          </Link>
+          <Link
+            to="transactions"
+            smooth={true}
+            duration={500}
+            className="text-white text-base mx-3 hover:text-blue-500 cursor-pointer"
+          >
+            Transactions
+          </Link>
         </div>
-  
-        <div className="flex flex-[0.25] justify-center items-center">
-          <p className="text-white text-right text-xs">
-            &copy;2023 All rights reserved
-          </p>
+
+        <div className="mt-6 text-base text-center">
+          <p className="text-gray-400">&copy; {new Date().getFullYear()} All rights reserved</p>
+        </div>
+
+        <div className="mt-4">
+          <div className="text-center text-gray-400 text-sm">
+            <p>Subscribe to our newsletter for updates:</p>
+          </div>
+          <div className="mt-2 flex items-center justify-center">
+            <input
+              type="email"
+              placeholder="Your email"
+              className="py-2 px-4 rounded-l-md border-t border-b border-l text-gray-800 focus:outline-none"
+            />
+            <button
+              className="bg-[#1526bd] hover:bg-[#b45609] text-white py-2 px-4 rounded-r-md border border-blue-500 focus:outline-none"
+              onClick={scrollToTop}
+            >
+              Subscribe
+            </button>
+          </div>
         </div>
       </div>
-    </div>
-  )
-  
-  export default Footer
+    </footer>
+  );
+};
+
+export default Footer;
