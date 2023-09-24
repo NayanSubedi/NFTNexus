@@ -2,7 +2,7 @@ import {BiTransfer} from 'react-icons/bi'
 import {MdOpenInNew} from 'react-icons/md'
 const Transactions = () => {
   return (
-    <div className="bg-[#24034b]" >
+
         <div className="w-4/5 py-10 mx-auto">
             <h4 className="text-white text-3xl font-bold uppercase text-gradient">Latest Transactions</h4>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gaps-4 lg:gaps-2 py-2.5">
@@ -14,10 +14,10 @@ const Transactions = () => {
             ))}
         </div>
         <div className="text-center my-5">
-        <button className='shadow-lg shadow-black text-sm bg-[#1526bd] hover:bg-[#b45609] rounded-full px-1.5 py-1'>View More</button>
+        <button className='shadow-lg shadow-black text-sm bg-[#1526bd] hover:bg-[#b45609] text-white rounded-full px-1.5 py-1'>View More</button>
         </div>
         </div>
-    </div>
+
   )
 }
 const Transaction = ({ tx }) => (
