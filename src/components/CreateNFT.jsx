@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import {FaTimes} from 'react-icons/fa'
 import { setGlobalState, useGlobalState } from '../store'
-const imgHero = 'https://img.freepik.com/free-photo/man-neon-suit-sits-chair-with-neon-sign-that-says-word-it_188544-27011.jpg?w=1380&t=st=1693909372~exp=1693909972~hmac=3bc0688d7a8c6545a2e54fed4467eaa371735924c61f644c3cd6c54ca7be1ba3'
+import Praharsha from '../assets/Snapchat-891827809.jpg'
 const CreateNFT = () => {
     const [modal] = useGlobalState('modal')
     const [title, setTitle] = useState('')
@@ -59,7 +59,7 @@ const CreateNFT = () => {
                 </div>
                 <div className='flex justify-center items-center rounded-xl mt-5'>
                     <div className='shrink-0 rounded-xl overflow-hidden h-20 w-20'>
-                        <img className='h-full w-full object-cover cursor-pointer' src= {imgBase64 || imgHero} alt="NFT" />
+                        <img className='h-full w-full object-cover cursor-pointer' src= {Praharsha} alt="NFT" />
                     </div>
                 </div>
                 <div className='flex justify-between items-center bg-gray-800 rounded-xl mt-5 '>
