@@ -52,7 +52,21 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-.lds-dual-ring {
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+/* Optional: Add custom styling to the scrollbar track and thumb */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+/* .lds-dual-ring {
   display: inline-block;
 }
 .lds-dual-ring:after {
@@ -74,6 +88,15 @@ body {
     transform: rotate(360deg);
   }
 }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+} */
+
 
 @tailwind base;
 @tailwind components;
