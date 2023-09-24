@@ -1,10 +1,15 @@
 import { setGlobalState } from "../store";
 
+
+
 const imgHero = 'https://img.freepik.com/free-photo/man-neon-suit-sits-chair-with-neon-sign-that-says-word-it_188544-27011.jpg?w=1380&t=st=1693909372~exp=1693909972~hmac=3bc0688d7a8c6545a2e54fed4467eaa371735924c61f644c3cd6c54ca7be1ba3';
+
 
 const Artworks = () => {
   return (
-    <div className="bg-[#24034b] gradient-bg-artworks">
+
+    
+    // <div className="bg-[#24034b] gradient-bg-artworks">
       <div className="w-4/5 py-10 mx-auto">
         <h4 className="text-white text-3xl font-bold uppercase text-gradient">Latest Artworks</h4>
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-4 lg:gap-3 py-2.5">
@@ -18,7 +23,7 @@ const Artworks = () => {
         <button className='shadow-lg shadow-black text-sm bg-[#1526bd] hover:bg-[#b45609] rounded-full px-1.5 py-1'>View More</button>
         </div>
       </div>
-    </div>
+    // </div>
   );
 };
 
