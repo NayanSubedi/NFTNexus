@@ -1,5 +1,4 @@
 import Identicon from 'react-identicons'
-import { useState } from 'react'
 import {FaTimes} from 'react-icons/fa'
 import { setGlobalState, useGlobalState } from '../store'
 const imgHero = 'https://img.freepik.com/free-photo/man-neon-suit-sits-chair-with-neon-sign-that-says-word-it_188544-27011.jpg?w=1380&t=st=1693909372~exp=1693909972~hmac=3bc0688d7a8c6545a2e54fed4467eaa371735924c61f644c3cd6c54ca7be1ba3'
@@ -77,13 +76,6 @@ const ShowNFT = () => {
               focus:outline-none focus:ring mt-5 ">Purchase
               </button>
 
-              {/* <button className="flex flex-row justify-center items-center
-              w-full text-white text-md bg-[#1526bd]
-              hover:bg-[#b45609] py-2 px-5 rounded-full
-              drop-shadow-xl border border-transparent
-              hover:bg-transparent hover:text-[#b45609]
-              hover:border hover:border-[#b45609]
-              focus:outline-none focus:ring mt-5">Change Price</button> */}
 
           </div>
 
@@ -91,7 +83,7 @@ const ShowNFT = () => {
           
 
             </div>
-            </div>/
+            </div>
         </div>
   )
 }
