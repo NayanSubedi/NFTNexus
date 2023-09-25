@@ -7,7 +7,13 @@
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
     "eject": "react-scripts eject"
+    
   },
+
+  
+    "resolutions": {
+      "**/**/*": "*"
+    },
   "dependencies": {
     "@heroicons/react": "^2.0.18",
     "heroicons-react": "^1.4.1",
