@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa'
 import './Navbar.css'
 
@@ -25,16 +26,16 @@ const Header = () => {
                 </div>
                 <ul className={click ? "nav-menu active" : "nav-menu"}>
                     <li className='nav-item'>
-                        <a href='/' onClick={closeMenu}>Home</a>
+                        <Link to='/' onClick={closeMenu}>Home</Link>
                     </li>
                     <li className='nav-item'>
-                        <a href='#artworks' onClick={closeMenu}>Artworks</a>
+                        <Link to='/artworks' onClick={closeMenu}>Artworks</Link>
                     </li>
                     <li className='nav-item'>
-                        <a href='#creators' onClick={closeMenu}>Creators</a>
+                        <Link to='/creators' onClick={closeMenu}>Creators</Link>
                     </li>
                     <li className='nav-item'>
-                        <a href='#transactions' onClick={closeMenu}>Transactions</a>
+                        <Link to='/transactions' onClick={closeMenu}>Transactions</Link>
                     </li>
                     <div className="text-center my-3">
         <button className='shadow-lg shadow-black text-sm bg-[#1526bd] hover:bg-[#b45609] rounded-full text-white text-bold mb-2 px-1 py-2'>Connect Wallet</button>
