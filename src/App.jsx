@@ -1,29 +1,27 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
 
 import Hero from './components/Hero';
 import Artworks from './components/Artworks';
 import Creators from './components/Creators';
 import Transactions from './components/Transactions';
 import Footer from './components/Footer';
-import Header from './components/Header';
 import UpdateNFT from './components/UpdateNFT';
-import ShowNFT from './components/ShowNFT';
+import ShowNFT from './components/ShowNFT'
+import Navbar from './components/Navbar';
 
 const App = () => {
   return (
-    <div className="gradient-bg-hero">
-      <Header />
-      <ShowNFT />
+    <>
+      <div className='gradient-bg-hero' />
+      <Navbar />
+      <Hero />
       <UpdateNFT />
-      <Routes>
-        <Route path="/" element={<Hero />} />
-        <Route path="/artworks" element={<Artworks />} />
-        <Route path="/creators" element={<Creators />} />
-        <Route path="/transactions" element={<Transactions />} />
-      </Routes>
+      <Artworks />
+      <ShowNFT />
+      <Creators />
+      <Transactions />
       <Footer />
-    </div>
+    </>
   );
 };
 
