@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, animateScroll as scroll } from 'react-scroll'; 
+import { Link } from 'react-router-dom'; 
 
 import NFTNexusLogo from '../assets/NFTNexus.png';
 
@@ -9,41 +9,37 @@ const Footer = () => {
   };
 
   return (
-    <footer className="gradient-bg-footer text-white">
+    <footer className="gradient-bg-hero text-white">
       <div className="container mx-auto py-8 flex flex-col items-center">
         <div className="flex justify-center items-center mb-4">
-          <img src={NFTNexusLogo} alt="NFT Nexus Logo" className="w-32" />
+        <a href='/'>
+          <img src={NFTNexusLogo} alt="NFT Nexus Logo"  className="w-32 cursor-pointer" />
+          </a>
         </div>
 
         <div className="flex flex-wrap justify-center">
           <Link
-            to="home"
-            smooth={true}
-            duration={500} // Duration of the scroll animation in milliseconds
+            to="/"
+
             className="text-white text-base mx-3 hover:text-blue-500 cursor-pointer"
           >
             Home
           </Link>
           <Link
-            to="creators"
-            smooth={true}
-            duration={500}
+            to="/artworks"
+
             className="text-white text-base mx-3 hover:text-blue-500 cursor-pointer"
           >
             Artworks
           </Link>
           <Link
-            to="features"
-            smooth={true}
-            duration={500}
+            to="/creators"
             className="text-white text-base mx-3 hover:text-blue-500 cursor-pointer"
           >
             Creators
           </Link>
           <Link
-            to="transactions"
-            smooth={true}
-            duration={500}
+            to="/transactions"
             className="text-white text-base mx-3 hover:text-blue-500 cursor-pointer"
           >
             Transactions
