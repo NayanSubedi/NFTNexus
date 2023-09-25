@@ -1,9 +1,10 @@
 import Identicon from 'react-identicons'
 import { setGlobalState } from '../store'
 import Typewriter from "typewriter-effect";
-const imgHero = 'https://img.freepik.com/free-photo/man-neon-suit-sits-chair-with-neon-sign-that-says-word-it_188544-27011.jpg?w=1380&t=st=1693909372~exp=1693909972~hmac=3bc0688d7a8c6545a2e54fed4467eaa371735924c61f644c3cd6c54ca7be1ba3'
+import IMG from '../assets/NFT.jpg'
 const Hero = () => {
   return (
+    <div className="bg-[#24034b]">
     <div className="flex  flex-col md:flex-row w-4/5 justify-between items-center  mx-auto py-32 ">
         <div className="md:w-3/6 w-full">
             <div className="text-white text-5xl font-bold">
@@ -45,7 +46,7 @@ const Hero = () => {
         
         </div>
         <div className="shadow-xl shadow-black md:w-2/5 w-full mt-10 md:mt-0 rounded-md  bg-gray-800">
-            <img className= 'h-50 w-full object-fill'src={imgHero} alt="Hero" />
+            <img className= 'h-50 w-full object-fill'src={IMG} alt="Hero" />
             <div className='flex justify-start items-center p-3'>
                 <Identicon className='h-10 w-10 object-contain rounded-full mr-3 ' string={'0x35...102n'} size={50}/>
                 <div>
@@ -55,6 +56,7 @@ const Hero = () => {
             </div>
         </div>
     </div>
+    // </div>
   )
 }
 
