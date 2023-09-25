@@ -80,7 +80,8 @@ const Creators = () => {
   };
 
   return (
-    <div className='w-4/5 py-10 mx-auto'>
+    <div className=" bg-[#24034b]">
+    <div className='w-4/5 py-32 mx-auto'>
       <h4 className="text-white text-3xl font-bold uppercase text-gradient">Top Artist</h4>
       <Slider {...settings}>
         {artists.map((artist) => (
@@ -108,6 +109,7 @@ const Creators = () => {
       <div className="text-center my-5">
         <button className='shadow-lg shadow-black text-sm bg-[#1526bd] hover:bg-[#b45609] rounded-full px-1.5 py-1'>View More</button>
       </div>
+    </div>
     </div>
   );
 };
