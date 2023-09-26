@@ -3,6 +3,7 @@ import Slider from 'react-slick';
 
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import './Glow.css'
 
 const Creators = () => {
   const artists = [
@@ -81,12 +82,12 @@ const Creators = () => {
 
   return (
     <div className=" bg-[#24034b]">
-    <div className='w-4/5 py-32 mx-auto'>
+    <div className='w-4/5 py-28 mx-auto'>
       <h4 className="text-white text-3xl font-bold uppercase text-gradient">Top Artist</h4>
       <Slider {...settings}>
         {artists.map((artist) => (
-          <div key={artist.id} className="w-full px-2"> 
-            <div className="w-full shadow-sm shadow-black rounded-md overflow-hidden bg-gray-800 my-2 p-3">
+          <div key={artist.id} className="w-full px-2 sm:w-3 md:w-6"> 
+            <div className="w-full shadow-sm glow2 shadow-black rounded-2xl overflow-hidden bg-gray-800 my-2 p-3">
               <div className="w-full relative">
                 <img
                   src={artist.bgImage}
@@ -107,7 +108,7 @@ const Creators = () => {
         ))}
       </Slider>
       <div className="text-center my-5">
-        <button className='shadow-lg shadow-black text-sm bg-[#1526bd] hover:bg-[#b45609] rounded-full px-1.5 py-1'>View More</button>
+        <button className='shadow-lg shadow-black text-sm text-white font-bold bg-[#1526bd] hover:bg-[#b45609] rounded-full px-1.5 py-1'>View More</button>
       </div>
     </div>
     </div>
