@@ -21,6 +21,7 @@
     margin: auto;
     height: 100%;
     padding: 0 1rem;
+    
 }
 
 .header .nav-menu a {
@@ -43,7 +44,7 @@
 
 .header .nav-item a:hover {
     padding-bottom: 12px;
-    border-bottom: 3px solid var(--secondary-color);
+    border-bottom: 3px blue solid;
 }
 
 .hamburger {
