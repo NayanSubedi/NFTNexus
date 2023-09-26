@@ -2,12 +2,13 @@ import Identicon from 'react-identicons'
 import { setGlobalState } from '../store'
 import Typewriter from "typewriter-effect";
 import IMG from '../assets/NFT.jpg'
+import  './Glow.css'
 const Hero = () => {
   return (
-    <div className="bg-[#24034b]">
+    <div className="bg-[#24034b] gradient-bg-artworks">
     <div className="flex  flex-col md:flex-row w-4/5 justify-between items-center  mx-auto py-32 ">
         <div className="md:w-3/6 w-full">
-            <div className="text-white text-5xl font-bold">
+            <div className="text-white text-6xl  font-bold">
                 <h1>Collect and Create <br /> Pixelated Arts,<br />
                 <span className="text-gradient">
                     
@@ -45,13 +46,13 @@ const Hero = () => {
         </div>
         
         </div>
-        <div className="shadow-xl shadow-black md:w-2/5 w-full mt-10 md:mt-0 rounded-md  bg-gray-800">
-            <img className= 'h-50 w-full object-fill'src={IMG} alt="Hero" />
+        <div className="shadow-xl  md:w-2/5 w-full mt-10 md:mt-0 rounded-md glow2 bg-gray-800">
+            <img className= 'h-50 w-70 object-fill'src={IMG} alt="Hero" />
             <div className='flex justify-start items-center p-3'>
-                <Identicon className='h-10 w-10 object-contain rounded-full mr-3 ' string={'0x35...102n'} size={50}/>
+                <Identicon className='h-10 w-10 object-contain rounded-full mr-3 ' string={'0x35..bdhcbcmsc.102n'} size={50}/>
                 <div>
                     <p className='text-white font-semibold'>0x35...086a</p>
-                    <small className='text-red-700 font-semibold text-md'>@ppap</small>
+                    <small className='text-red-700 font-semibold text-md'>@rickroll</small>
                 </div>
             </div>
         </div>
