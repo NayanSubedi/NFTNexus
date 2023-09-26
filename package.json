@@ -13,6 +13,8 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.0.18",
+    "axios": "^1.5.0",
+    "chart.js": "^4.4.0",
     "heroicons-react": "^1.4.1",
     "ipfs-http-client": "^59.0.0",
     "react": "latest",
