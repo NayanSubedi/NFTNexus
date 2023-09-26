@@ -26,8 +26,8 @@ const Artworks = () => {
     },
     {
       img: NFT4,
-      title: 'Urban Echoes: Graffiti Fusion',
-      description: 'Experience the raw energy and creative rebellion of the streets with Urban Echoes. This NFT collection captures the essence of urban life through graffiti fusion, blending street art with digital innovation. Each piece is a snapshot of the vibrant, ever-evolving cityscape..',
+      title: 'Digital Warrior of the Metaverse',
+      description: 'Embrace the future of battle in the digital realm with this remarkable NFT. This digital warrior is a symbol of strength, resilience, and determination. Clad in futuristic armor and armed with the latest in virtual weaponry, this warrior is ready to conquer the virtual battlegrounds of the Metaverse.',
       price: '60 ETH',
     },
   ];
