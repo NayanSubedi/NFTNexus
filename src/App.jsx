@@ -10,6 +10,7 @@ import ShowNFT from './components/ShowNFT'
 import Navbar from './components/Navbar';
 
 
+
 const App = () => {
   return (
     <>
@@ -21,6 +22,7 @@ const App = () => {
       <ShowNFT />
       <Creators />
       <Transactions />
+
       <Footer />
     </>
   );
