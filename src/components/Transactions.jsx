@@ -20,15 +20,33 @@ const Transactions = () => {
     { name: 'Tron (TRN)', price: '$0.08463', change: '+0.20%' },
   ];
 
+  const addresses = [
+    '0x26...068d',
+    '0x12...a8f4',
+    '0x74...1b9e',
+    '0x98...6f2d',
+    '0x54...3e1a',
+    '0x71...5c8b',
+  ];
+
+  const ethAmounts = [
+    '56 ETH',
+    '75 ETH', 
+    '42 ETH', 
+    '69 ETH',
+    '17 ETH', 
+    '5 ETH'
+    ];
+
   return (
     <div className='bg-[#24034b]'>
       <div className="w-4/5 mx-auto py-24">
         <h4 className="text-white text-3xl font-bold uppercase text-gradient">Latest Transactions</h4>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gaps-4 lg:gaps-2 py-2.5">
-          {Array(9)
+          {Array(6)
             .fill()
             .map((nft, i) => (
-              <Transaction key={i} tx={i + 1} />
+              <Transaction key={i} tx={i + 1} address={addresses[i]} ethAmount={ethAmounts[i]} />
             ))}
         </div>
         <div className="text-center my-5">
@@ -45,7 +63,7 @@ const Transactions = () => {
   );
 };
 
-const Transaction = ({ tx }) => (
+const Transaction = ({ tx, address, ethAmount }) => (
   <div className="flex justify-between glow1 items-center border border-violet-800 text-gray-400 w-full shadow-xl shadow-black rounded-md  overflow-hidden bg-gray-800 my-2 p-3">
     <div className='rounded-md shadow-sm shadow-violet-500 p-2 '>
       <BiTransfer />
@@ -54,11 +72,11 @@ const Transaction = ({ tx }) => (
       <h4 className='text-sm'> #{tx} Fund Transferred</h4>
       <small className='flex justify-start items-center'>
         <span className='mr-1'>Received by</span>
-        <a className='text-violet-500 mr-2' href='#' target='_blank'>0x26...068d</a>
+        <a className='text-violet-500 mr-2' href={`#${address}`} target='_blank'>{address}</a>
         <MdOpenInNew />
       </small>
     </div>
-    <p className='text-sm font-medium '>0.56 ETH</p>
+    <p className='text-sm font-medium '>{ethAmount}</p>
   </div>
 );
 
