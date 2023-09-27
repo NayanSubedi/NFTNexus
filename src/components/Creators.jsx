@@ -5,45 +5,68 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './Glow.css'
 
+
+
 const Creators = () => {
   const artists = [
 
     {
       id: 1,
       name: "@BAYC",
-      bgImage: "https://img.freepik.com/free-vector/hand-drawn-nft-style-ape-illustration_23-2149622021.jpg?w=740&t=st=1695343014~exp=1695343614~hmac=b2c6944c9b61da8e20efe4f6ce766b05f9901dc1ae57cdd7073ad3928f743157",
+      bgImage: "https://media.giphy.com/media/ho0xXatV7b3Fo1ZRXN/giphy.gif",
       image: "https://ik.imagekit.io/bayc/assets/bayc-footer.png",
     },
     {
       id: 2,
       name: "@NFTPUNK",
-      bgImage: "https://img.freepik.com/free-vector/hand-drawn-nft-style-ape-illustration_23-2149611057.jpg?w=740&t=st=1695343069~exp=1695343669~hmac=47bbda6d561759450277083446a9fcb40a1c26c7fb0ced5200de3283c9e23714",
+      bgImage: "https://nftcalendar.io/storage/uploads/2022/03/17/hidden_031720220544446232cacc52f86.gif",
       image: "https://coincierge.de/wp-content/uploads/2022/04/CryptoPunks-NFT-logo.png",
     },
     {
       id: 3,
       name: "@PEPE",
-      bgImage: "https://img.freepik.com/free-vector/hand-drawn-nft-style-ape-illustration_23-2149622024.jpg?w=740&t=st=1695343143~exp=1695343743~hmac=1dd1309ae7e1d510b4852582a96fdcd3f8506ee999c70a235581018728690fd9",
+      bgImage: "https://media.giphy.com/media/utJKJmadD3dZFJ01XR/giphy.gif",
       image: "https://pbs.twimg.com/profile_images/1477061966317461504/WUzVJE-U_400x400.jpg",
     },
     {
       id: 4,
       name: "@Sludgelife",
-      bgImage: "https://img.freepik.com/free-vector/hand-drawn-nft-style-ape-illustration_23-2149612188.jpg?w=740&t=st=1695343190~exp=1695343790~hmac=1e323bcb610e32c829d3c72bbc4c48b3a5616407c40f611c4d4e38d00964bc8f",
+      bgImage: "https://steamuserimages-a.akamaihd.net/ugc/1797524205630547582/16D2B95919D3FEF40908F3BEF5BBFE0347B8060B/",
       image: "https://pbs.twimg.com/profile_images/1296154719598059520/gwe7QXjM_400x400.jpg",
     },
     {
       id: 5,
-      name: "@PEPE",
-      bgImage: "https://img.freepik.com/free-vector/hand-drawn-nft-style-ape-illustration_23-2149622024.jpg?w=740&t=st=1695343143~exp=1695343743~hmac=1dd1309ae7e1d510b4852582a96fdcd3f8506ee999c70a235581018728690fd9",
-      image: "https://pbs.twimg.com/profile_images/1477061966317461504/WUzVJE-U_400x400.jpg",
+      name: "@GIGAMONKEY",
+      bgImage: "https://media.giphy.com/media/EruZaPOld5NDhql2nX/giphy.gif",
+      image: "https://pbs.twimg.com/profile_images/1626216945698881541/kF6xM_Cb_400x400.jpg",
     },
     {
       id: 6,
-      name: "@Sludgelife",
-      bgImage: "https://img.freepik.com/free-vector/hand-drawn-nft-style-ape-illustration_23-2149612188.jpg?w=740&t=st=1695343190~exp=1695343790~hmac=1e323bcb610e32c829d3c72bbc4c48b3a5616407c40f611c4d4e38d00964bc8f",
-      image: "https://pbs.twimg.com/profile_images/1296154719598059520/gwe7QXjM_400x400.jpg",
+      name: "@KUNTLIFE",
+      bgImage: "https://i.pinimg.com/originals/52/91/4b/52914b8ac2f16a11c42786c3d89a84f5.gif",
+      image: "https://pbs.twimg.com/profile_images/1488798419858739210/xmQWeaC3_400x400.jpg",
     },
+    {
+      id: 7,
+      name: "@FROMURANUS",
+      bgImage: "https://img-cdn.magiceden.dev/rs:fill:640:640:0:0/plain/https://creator-hub-prod.s3.us-east-2.amazonaws.com/alienrejects_pfp_1662870553748.gif",
+      image: "https://pbs.twimg.com/profile_images/1488001159499497473/06gVKzN9_400x400.jpg",
+    },
+    {
+      id: 8,
+      name: "@RICKONROLL",
+      bgImage: "https://66.media.tumblr.com/tumblr_m971zpBbAF1rbgzizo1_640.gifv",
+      image: "https://mintspace-media.fra1.digitaloceanspaces.com/wp-content/uploads/2021/11/26160245/38B4C752-F5D4-40E9-B956-9DF25FBDDEDE.png",
+    },
+    {
+      id: 9,
+      name: "@SNOPPYDOGGIE",
+      bgImage: "https://cdn.hashnode.com/res/hashnode/image/upload/v1643908114673/GoYEKcEhW.gif?auto=format,compress&gif-q=60&format=webm",
+      image: "https://i.seadn.io/gae/PUj2kmAWCTVLWB2Vt4uacmHA7dxf-NqwMcxmDurbzPKweNWrEuATh_gyzRiM-wtokZOc0RUxXpOOD8SPDnZs8PSWlXNjHkxyUvCccA?auto=format&dpr=1&w=1000",
+    },
+   
+
+   
   ];
 
   
@@ -54,7 +77,7 @@ const Creators = () => {
     slidesToShow: 4, 
     slidesToScroll: 1,
     autoplay: true, 
-    autoplaySpeed: 1700, 
+    autoplaySpeed: 1200, 
     responsive: [
       {
         breakpoint: 1024,

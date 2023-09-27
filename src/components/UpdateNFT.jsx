@@ -7,8 +7,7 @@ const UpdateNFT = () => {
     const [title, setTitle] = useState('')
     const [price, setPrice] = useState('')
     const [description, setDescription] = useState('')
-    const [fileUrl, setFileUrl] = useState('')
-    const [imgBase64, setImgBase64] = useState(null)
+
 
 
     const handleSubmit =  (e) => {

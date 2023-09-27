@@ -5,9 +5,7 @@ import { faTwitter, faFacebook, faInstagram, faGithub } from '@fortawesome/free-
 import NFTNexusLogo from '../assets/NFTNexus.png';
 
 const Footer = () => {
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
+
 
   const socialLinks = [
     { icon: faTwitter, url: 'https://www.youtube.com/shorts/y5N8eFP6D0U' },
@@ -32,15 +30,14 @@ const Footer = () => {
           <FooterLink to="/transactions" text="Transactions" />
         </div>
 
-        <Copyright />
-
-        <SubscriptionForm scrollToTop={scrollToTop} />
-
+        
         <SocialMediaLinks socialLinks={socialLinks} />
 
-        <ContactInformation email="contact@nftnexus.co" />
+        <SubscriptionForm  />
 
-        <LegalLinks />
+        <Copyright />
+
+
       </div>
     </footer>
   );
@@ -52,13 +49,24 @@ const FooterLink = ({ to, text }) => (
   </Link>
 );
 
-const Copyright = () => (
-  <div className="mt-6 text-base text-center">
-    <p className="text-gray-400">&copy; {new Date().getFullYear()} All rights reserved</p>
+const SocialMediaLinks = ({ socialLinks }) => (
+  <div className="mt-4">
+    <div className="text-center text-gray-400 text-sm">
+      <p>Follow us on:</p>
+    </div>
+    <div className="mt-2 flex items-center justify-center">
+      {socialLinks.map((link, index) => (
+        <a href={link.url} target="_blank" rel="noopener noreferrer" key={index} className="text-blue-400 hover:text-blue-600 mr-4">
+          <FontAwesomeIcon icon={link.icon} size="2x" />
+        </a>
+      ))}
+    </div>
   </div>
-);
+)
 
-const SubscriptionForm = ({ scrollToTop }) => (
+
+
+const SubscriptionForm = ({  }) => (
   <div className="mt-4">
     <div className="text-center text-gray-400 text-sm">
       <p>Subscribe to our newsletter for updates:</p>
@@ -79,42 +87,18 @@ const SubscriptionForm = ({ scrollToTop }) => (
   </div>
 );
 
-const SocialMediaLinks = ({ socialLinks }) => (
-  <div className="mt-4">
-    <div className="text-center text-gray-400 text-sm">
-      <p>Follow us on:</p>
-    </div>
-    <div className="mt-2 flex items-center justify-center">
-      {socialLinks.map((link, index) => (
-        <a href={link.url} target="_blank" rel="noopener noreferrer" key={index} className="text-blue-400 hover:text-blue-600 mr-4">
-          <FontAwesomeIcon icon={link.icon} size="2x" />
-        </a>
-      ))}
-    </div>
+const Copyright = () => (
+  <div className="mt-6 text-base text-center">
+    <p className="text-gray-400">&copy; {new Date().getFullYear()} All rights reserved | NFTNexus</p>
   </div>
 );
 
-const ContactInformation = ({ email }) => (
-  <div className="mt-4">
-    <div className="text-center text-gray-400 text-sm">
-      <p>Contact us:</p>
-    </div>
-    <div className="mt-2 text-center">
-      <p>Email: <a href={`mailto:${email}`} className="text-blue-400 hover:text-blue-600">{email}</a></p>
-    </div>
-  </div>
-);
 
-const LegalLinks = () => (
-  <div className="mt-4">
-    <div className="text-center text-gray-400 text-sm">
-      <p>Legal:</p>
-    </div>
-    <div className="mt-2 flex items-center justify-center">
-      <FooterLink to="/privacy-policy" text="Privacy Policy" />
-      <FooterLink to="/terms-of-service" text="Terms of Service" />
-    </div>
-  </div>
-);
+
+
+
+
+
+
 
 export default Footer;
