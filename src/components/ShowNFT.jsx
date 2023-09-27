@@ -1,7 +1,7 @@
 import Identicon from 'react-identicons'
 import {FaTimes} from 'react-icons/fa'
 import { setGlobalState, useGlobalState } from '../store'
-const imgHero = 'https://img.freepik.com/free-photo/man-neon-suit-sits-chair-with-neon-sign-that-says-word-it_188544-27011.jpg?w=1380&t=st=1693909372~exp=1693909972~hmac=3bc0688d7a8c6545a2e54fed4467eaa371735924c61f644c3cd6c54ca7be1ba3'
+import imgHero from '../assets/NFT1.jpg'
 const ShowNFT = () => {
     const [modal] = useGlobalState('showModal')
 
@@ -43,11 +43,10 @@ const ShowNFT = () => {
                 </div>
 
                 <div className='flex flex-col justify-start rounded-xl mt-5'> 
-                <h4 className='text-white font-semibold'>Title</h4>
+                <h4 className='text-white font-semibold'>The Great Ape Odyssey</h4>
                 <p className='text-gray-400 text-xs my-1'>
 
-                  Raesent ante magna, pulvinar eget ultrices sed, accumsan vel felis. Vivamus eleifend enim ut lectus rutrum aliquet. 
-                   Nullam dignissim porttitor est, sed condimentum nisi tincidunt vitae.
+                Embark on The Great Ape Odyssey, a digital journey into the heart of the jungle. This NFT captures the essence of our closest relatives, the apes, in their natural habitat. Witness their intricate social bonds, raw power, and untamed beauty in this captivating artwork.
                 </p>
                 <div className='flex justify-between items-center mt-3 text-white'>
                   <div className='flex justify-start items-center'>
@@ -60,7 +59,7 @@ const ShowNFT = () => {
                   </div>
                   <div className='flex flex-col text-white '>
                     <small className='text-xs'>Current Price</small>
-                    <p className='text-sm font-semibold'>0.34 ETH</p>
+                    <p className='text-sm font-semibold'>56 ETH</p>
                   </div>
                 </div>
                 </div>

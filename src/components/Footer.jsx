@@ -71,7 +71,7 @@ const SubscriptionForm = ({ scrollToTop }) => (
       />
       <button
         className="bg-[#1526bd] hover:bg-[#b45609] border-violet-800 text-white py-2 px-4 rounded-r-md border focus:outline-none"
-        onClick={scrollToTop}
+        
       >
         Subscribe
       </button>
