@@ -22,7 +22,7 @@ const Transactions = () => {
         {
           params: {
             vs_currency: 'usd',
-            ids: 'bitcoin,binancecoin,hedera-hashgraph,terra-luna-2,the-open-network,internet-computer,tether,the-sandbox,tezos, pepe,chiliz,stellar,shiba-inu,avalanche-2,BNB,1inch,ethereum,chainlink,ripple,fantom,solana,tron,litecoin,dogecoin,aave,algorand,cosmos,cardano,filecoin,polkadot,uniswap,hedera,okb',
+            ids: 'bitcoin,binancecoin,usd-coin,dai,quant-network,leo-token,monero,maker,mantle,aptos,lido-dao,crypto-com-chain,hedera-hashgraph,terra-luna-2,the-open-network,internet-computer,tether,the-sandbox,tezos, pepe,chiliz,stellar,shiba-inu,avalanche-2,BNB,1inch,ethereum,chainlink,ripple,fantom,solana,tron,litecoin,dogecoin,aave,algorand,cosmos,cardano,filecoin,polkadot,uniswap,hedera,okb',
           },
         }
       );
@@ -146,7 +146,7 @@ const CryptoPriceTable = ({
           {
             params: {
               vs_currency: 'usd',
-              ids: 'bitcoin,binancecoin,stellar,terra-luna-2,hedera-hashgraph,the-open-network,tether,internet-computer,tezos,pepe, the-sandbox,chiliz,shiba-inu,avalanche-2,BNB,1inch,ethereum,chainlink,ripple,fantom,solana,tron,litecoin,dogecoin,aave,algorand,cosmos,cardano,filecoin,polkadot,uniswap,hedera,okb',
+              ids: 'bitcoin,binancecoin,usd-coin,dai,stellar,leo-token,monero,maker,mantle,aptos,lido-dao,crypto-com-chain,quant-network,terra-luna-2,hedera-hashgraph,the-open-network,tether,internet-computer,tezos,pepe, the-sandbox,chiliz,shiba-inu,avalanche-2,BNB,1inch,ethereum,chainlink,ripple,fantom,solana,tron,litecoin,dogecoin,aave,algorand,cosmos,cardano,filecoin,polkadot,uniswap,hedera,okb',
             },
           }
         );
