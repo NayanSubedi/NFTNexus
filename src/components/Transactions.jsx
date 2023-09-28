@@ -35,7 +35,7 @@ const Transactions = () => {
 
     const intervalId = setInterval(() => {
       fetchCryptoData();
-    }, 10000);
+    }, 5000);
 
     return () => {
       clearInterval(intervalId);
