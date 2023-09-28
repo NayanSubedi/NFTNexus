@@ -11,12 +11,14 @@ const Navbar = () => {
     const [click, setClick] = useState(false)
     const handleClick = () => setClick(!click)
 
+    
+
     const closeMenu = () => setClick(false)
 
     return (
         <div className='header'>
             <nav className='navbar'>
-                <a href='https://nayansubedi.github.io/NFTNexus/#/' className='logo w-32' >
+                <a href='https://nayansubedi.github.io/NFTNexus' className='logo w-32' >
                     <img src={NFTNexusLogo} alt='logo' />
                 </a>
                 <div className='hamburger ' onClick={handleClick}>
