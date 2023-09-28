@@ -16,7 +16,7 @@ const Navbar = () => {
     return (
         <div className='header'>
             <nav className='navbar'>
-                <a href='/' className='logo w-32' >
+                <a href='https://nayansubedi.github.io/NFTNexus/#/' className='logo w-32' >
                     <img src={NFTNexusLogo} alt='logo' />
                 </a>
                 <div className='hamburger ' onClick={handleClick}>
