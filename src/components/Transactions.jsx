@@ -22,7 +22,7 @@ const Transactions = () => {
         {
           params: {
             vs_currency: 'usd',
-            ids: 'bitcoin,binancecoin,usd-coin,dai,quant-network,leo-token,monero,maker,mantle,aptos,lido-dao,crypto-com-chain,hedera-hashgraph,terra-luna-2,the-open-network,internet-computer,tether,the-sandbox,tezos, pepe,chiliz,stellar,shiba-inu,avalanche-2,BNB,1inch,ethereum,chainlink,ripple,fantom,solana,tron,litecoin,dogecoin,aave,algorand,cosmos,cardano,filecoin,polkadot,uniswap,hedera,okb',
+            ids: 'bitcoin,binancecoin,hedera-hashgraph,aptos,the-graph,radix,injective-protocol,decentraland,harvest-finance,axie-infinity,apecoin,blockstack,immutable-x,frax,kaspa,quant-network,mantle,vechain,near,arbitrum,optimism,crypto-com-chain,terra-luna-2,the-open-network,internet-computer,tether,the-sandbox,tezos, pepe,chiliz,stellar,shiba-inu,avalanche-2,BNB,1inch,ethereum,chainlink,ripple,fantom,solana,tron,litecoin,dogecoin,aave,algorand,cosmos,cardano,filecoin,polkadot,uniswap,hedera,okb',
           },
         }
       );
@@ -146,7 +146,7 @@ const CryptoPriceTable = ({
           {
             params: {
               vs_currency: 'usd',
-              ids: 'bitcoin,binancecoin,usd-coin,dai,stellar,leo-token,monero,maker,mantle,aptos,lido-dao,crypto-com-chain,quant-network,terra-luna-2,hedera-hashgraph,the-open-network,tether,internet-computer,tezos,pepe, the-sandbox,chiliz,shiba-inu,avalanche-2,BNB,1inch,ethereum,chainlink,ripple,fantom,solana,tron,litecoin,dogecoin,aave,algorand,cosmos,cardano,filecoin,polkadot,uniswap,hedera,okb',
+              ids: 'bitcoin,binancecoin,stellar,crypto-com-chain,kaspa,frax,injective-protocol,axie-infinity,apecoin,harvest-finance,decentraland,immutable-x,radix,blockstack,the-graph,quant-network,mantle,optimism,near,vechain,arbitrum, aptos,terra-luna-2,hedera-hashgraph,the-open-network,tether,internet-computer,tezos,pepe, the-sandbox,chiliz,shiba-inu,avalanche-2,BNB,1inch,ethereum,chainlink,ripple,fantom,solana,tron,litecoin,dogecoin,aave,algorand,cosmos,cardano,filecoin,polkadot,uniswap,hedera,okb',
             },
           }
         );
@@ -200,7 +200,8 @@ const CryptoPriceTable = ({
                     />
                   )}
                 </td>
-                <td className="px-4 text-white font-semibold text-center py-2">{crypto.name}</td>
+                <td className="px-4 text-white font-semibold text-center py-2">
+                  {crypto.name}</td>
                 <td className="px-4 text-white text-center font-semibold py-2">${crypto.current_price.toFixed(7)}</td>
                 <td
                   className={`px-4 py-2 text-center ${

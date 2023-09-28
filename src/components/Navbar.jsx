@@ -16,9 +16,9 @@ const Navbar = () => {
     return (
         <div className='header'>
             <nav className='navbar'>
-                <a href='/' className='logo w-32'>
+                <Link href='/' className='logo w-32' onClick={closeMenu}>
                     <img src={NFTNexusLogo} alt='logo' />
-                </a>
+                </Link>
                 <div className='hamburger ' onClick={handleClick}>
                     {click ? (<FaTimes size={30} style={{ color: '#ffffff' }} />)
                         : (<FaBars size={30} style={{ color: '#ffffff' }} />)}

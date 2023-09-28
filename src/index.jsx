@@ -7,12 +7,14 @@ import {HashRouter, Routes, Route} from 'react-router-dom'
 import ArtworksPage from './routes/ArtworksPage';
 import CreatorsPage from './routes/CreatorsPage';
 import TransactionsPage from './routes/TransactionsPage';
+import Navbar from './components/Navbar';
 
 
 
 
 ReactDOM.render(
   <HashRouter>
+    <Navbar />
     <Routes>
       <Route path='/' element={<App />} />
       <Route path='/artworks' element={<ArtworksPage />} />
