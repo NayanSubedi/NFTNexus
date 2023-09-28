@@ -1,11 +1,13 @@
 {
-  "homepage": ".",
+  "homepage": "https://nayansubedi.github.io/NFTNexus",
   "name": "NFTNexus",
   "private": false,
   "version": "0.0.0",
   "scripts": {
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build",
     "test": "react-app-rewired test",
     "eject": "react-scripts eject"
   },
