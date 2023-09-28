@@ -200,7 +200,8 @@ const CryptoPriceTable = ({
                     />
                   )}
                 </td>
-                <td className="px-4 text-white font-semibold text-center py-2">{crypto.name}</td>
+                <td className="px-4 text-white font-semibold text-center py-2">
+                  {crypto.name}</td>
                 <td className="px-4 text-white text-center font-semibold py-2">${crypto.current_price.toFixed(7)}</td>
                 <td
                   className={`px-4 py-2 text-center ${
