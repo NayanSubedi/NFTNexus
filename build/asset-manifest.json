@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/NFTNexus/static/css/main.c9563059.css",
-    "main.js": "/NFTNexus/static/js/main.e02c32b4.js",
+    "main.js": "/NFTNexus/static/js/main.e5978ec4.js",
     "static/media/NFT3.jpg": "/NFTNexus/static/media/NFT3.83667d44cba3d96bd839.jpg",
     "static/media/NFT1.jpg": "/NFTNexus/static/media/NFT1.f11715bfb9117bffa8db.jpg",
     "static/media/NFT2.jpg": "/NFTNexus/static/media/NFT2.6a10fc16dd1219f630d0.jpg",
@@ -14,10 +14,10 @@
     "static/media/slick.woff": "/NFTNexus/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/NFTNexus/index.html",
     "main.c9563059.css.map": "/NFTNexus/static/css/main.c9563059.css.map",
-    "main.e02c32b4.js.map": "/NFTNexus/static/js/main.e02c32b4.js.map"
+    "main.e5978ec4.js.map": "/NFTNexus/static/js/main.e5978ec4.js.map"
   },
   "entrypoints": [
     "static/css/main.c9563059.css",
-    "static/js/main.e02c32b4.js"
+    "static/js/main.e5978ec4.js"
   ]
 }
