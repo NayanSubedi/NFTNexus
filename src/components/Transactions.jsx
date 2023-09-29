@@ -148,6 +148,7 @@ const CryptoPriceTable = ({
               vs_currency: 'usd',
               ids: 'bitcoin,binancecoin,stellar,crypto-com-chain,kaspa,frax,injective-protocol,axie-infinity,apecoin,harvest-finance,decentraland,immutable-x,radix,blockstack,the-graph,quant-network,mantle,optimism,near,vechain,arbitrum, aptos,terra-luna-2,hedera-hashgraph,the-open-network,tether,internet-computer,tezos,pepe, the-sandbox,chiliz,shiba-inu,avalanche-2,BNB,1inch,ethereum,chainlink,ripple,fantom,solana,tron,litecoin,dogecoin,aave,algorand,cosmos,cardano,filecoin,polkadot,uniswap,hedera,okb',
             },
+            
           }
         );
 
